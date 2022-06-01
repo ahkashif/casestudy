@@ -1,0 +1,9 @@
+.container {
+  max-width: 540px;
+  @include breakpoint(tablet) {
+    max-width: 720px;
+  }
+  @include breakpoint(desktop) {
+    max-width: 1140px;
+  }
+}
