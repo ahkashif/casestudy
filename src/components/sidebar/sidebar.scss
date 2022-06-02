@@ -1,0 +1,15 @@
+.sidebar {
+  .sidebar__list {
+    padding-left: pxToEm(8px);
+    .sidebar__listItem {
+      list-style: none;
+      border-bottom: 1px solid $grey;
+      color: $philippine-gray;
+      cursor: pointer;
+      span {
+        padding: pxToEm(14px);
+        display: block;
+      }
+    }
+  }
+}

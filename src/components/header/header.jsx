@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import Logo  from '../../assets/images/logo.png';
+import Logo  from '../../logo.png';
 import SignInandSignUp from "../signinandsignup/signinandsignup";
 import Cart from '../cart/cart';
-import './header.scss';
 
 const Header = () => (
     <div className="header">

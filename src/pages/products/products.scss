@@ -1,0 +1,11 @@
+.productsWrapper {
+  display: flex;
+  .productsWrapper__sidebar {
+    background-color: $bright-grey;
+    width: 20%;
+  }
+  .productsWrapper__main {
+    width: 80%;
+    padding: pxToEm(8px);
+  }
+}

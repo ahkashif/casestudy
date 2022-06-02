@@ -1,8 +1,8 @@
 .footer {
-  position:absolute;
-  bottom:0;
-  width:100%;  /* Height of the footer */
-  background:#ccc;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  background: $philippine-gray;
   .footer__description {
     text-align: center;
     margin: 0;

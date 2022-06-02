@@ -1,0 +1,41 @@
+.banner {
+  display: flex;
+  min-height: 320px;
+  box-shadow: 0 pxToEm(15px) pxToEm(10px) pxToEm(-15px) #111; 
+  padding: pxToEm(5px) 0;
+  .banner__imgWrapper {
+    width: 40%;
+    img {
+      width: 100%;
+    }
+  }
+  .banner__descriptionWrapper {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .banner__heading {
+      font-family: $roboto-bold;
+      font-size: $font-size-heading;
+      margin-bottom: pxToEm(10px);
+    }
+    .banner__description {
+      font-family: $roboto-regular;
+      font-size: $font-size;
+      margin-bottom: pxToEm(10px);
+      padding: 0 pxToEm(16px);
+    }
+    .banner__exploreButton {
+      width: auto;
+      margin: 0 auto;
+      background-color: $primary;
+      color: $white;
+      border: none;
+      padding: pxToEm(8px) pxToEm(12px);
+    }
+  }
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}

@@ -1,6 +1,6 @@
-import React from 'react'
-import './footer.scss';
-function footer() {
+import React from 'react';
+
+const Footer = () => {
   return (
     <div className="footer">
       <p className="footer__description">Copyright © 2011-2018 Sabka Bazaar Grocery Supplies Pt Ltd</p>
@@ -8,4 +8,4 @@ function footer() {
   )
 }
 
-export default footer;
+export default Footer;
