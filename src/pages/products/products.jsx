@@ -1,10 +1,8 @@
-import React from 'react';
-import  { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProductsList from '../../components/productsList/productsList';
 import Sidebar from '../../components/sidebar/sidebar';
 
 const Products = () => {
-
   const [allProducts, setAllProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -17,9 +15,9 @@ const Products = () => {
       .catch(err => console.error(err));
   }, []);
 
-  function filterByCategory(e) {
+  function filterByCategory(id) {
     const filteredProducts = allProducts.filter(product => {
-      return product.category === e.target.dataset.id;
+      return product.category === id;
     });
     setFilteredProducts(filteredProducts);
   }

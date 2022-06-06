@@ -1,9 +1,10 @@
 .container {
-  max-width: pxToEm(540px);
+  max-width: pxToEm(1250px);
   @include breakpoint(tablet) {
-    max-width: pxToEm(720px);
+    max-width: 100%;
+    padding: 0;
   }
   @include breakpoint(desktop) {
-    max-width: pxToEm(1240px);
+    max-width: 100%;
   }
 }

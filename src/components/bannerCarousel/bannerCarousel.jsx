@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import { useState, useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SimpleSlider = () => {
 
@@ -16,10 +17,10 @@ const SimpleSlider = () => {
   }, []);
 
   return (
-    <Carousel fade prevLabel='PREV' nextLabel='NEXT'>
+    <Carousel fade prevLabel='PREV' className='container' nextLabel='NEXT'>
       {
         bannerData.map((item, index) => {
-          return <Carousel.Item key= {index} ><img src={`http://localhost:3000${item.bannerImageUrl}`} alt={item.bannerImageAlt} /></Carousel.Item>
+          return <Carousel.Item key= {index} ><LazyLoadImage preload src={`https://stellar-meerkat-0939c0.netlify.app${item.bannerImageUrl}`} alt={item.bannerImageAlt} /></Carousel.Item>
         })
       }
     </Carousel>

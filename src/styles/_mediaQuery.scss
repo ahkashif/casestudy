@@ -1,12 +1,12 @@
 // media query mixins
 @mixin breakpoint($point) {
   @if $point == desktop {
-    @media (min-width: 1320px) { @content; }
+    @media (max-width: 1320px) { @content; }
   }
   @else if $point == tablet {
-    @media (min-width: 768px) { @content; }
+    @media (max-width: 768px) { @content; }
   }
   @else if $point == mobile {
-    @media (min-width: 576px)  { @content; }
+    @media (max-width: 576px)  { @content; }
   }
 }
